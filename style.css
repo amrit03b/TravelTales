@@ -1,0 +1,94 @@
+/* Navbar styles */
+.navbar {
+    background-color: #FFC0CB; /* Pink background color for the navbar */
+}
+
+.pink-bg {
+    background-color: #FFC0CB; /* Pink background color for the offcanvas body */
+}
+
+.pink-text {
+    color: #C71585; /* Pink color for the navbar brand text */
+}
+
+.nav-link {
+    font-size: 18px; /* Custom font size */
+    color: #333; /* Custom link color */
+    margin-right: 15px; /* Custom margin between the nav items */
+    transition: all 0.3s; /* Smooth transition for size and color changes */
+}
+
+.nav-link:hover {
+    font-size: 20px; /* Slightly bigger font size on hover */
+    color: #FF69B4; /* Lighter pink color on hover */
+}
+
+.nav-link:active {
+    font-size: 20px; /* Slightly bigger font size on click */
+    color: #C71585; /* Darker pink color on click */
+}
+
+/* Navbar styles (same as before) */
+
+/* New section styles */
+.hero-section {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0e0d0d; /* Dark pink color for the hero title */
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    color: #513242; /* Dark pink color for the hero subtitle */
+}
+
+.cards-section {
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.card {
+    width: 300px; /* Adjust the card width as needed */
+    margin: 20px 5%; /* Add more space between the cards horizontally and vertically */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px; /* Adjust the image height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #555;
+}
