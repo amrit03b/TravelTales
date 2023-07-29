@@ -22,39 +22,46 @@
         </div>
     </nav>
 
-    <!-- Writing section -->
-    <section class="writing-section" style="background-image: url('bg2.jpg');">
-        <div class="container">
-            <h1 class="writing-title">Write Your Travel Journal</h1>
-            <div class="writing-form">
+<!-- Writing section -->
+<section class="writing-section" style="background-image: url('bg2.jpg');">
+    <div class="container">
+        <h1 class="writing-title">Write Your Travel Journal</h1>
+        <div class="writing-form">
+            <form id="journal-form"> <!-- Added the form element with the ID "journal-form" -->
                 <div class="form-group">
                     <label for="journalTitle">Title</label>
-                    <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal...">
+                    <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal..."
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="journalContent">Content</label>
-                    <textarea class="form-control" id="journalContent" rows="10" placeholder="Start writing about your experiences..."></textarea>
+                    <textarea class="form-control" id="journalContent" rows="10"
+                        placeholder="Start writing about your experiences..." required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="journalImage">Upload Image</label>
                     <input type="file" class="form-control-file" id="journalImage">
                 </div>
-                <button type="button" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
+                <button type="submit" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
                 <div class="form-check mt-3">
                     <input type="checkbox" class="form-check-input" id="publicCheck">
                     <label class="form-check-label" for="publicCheck">Make Public</label>
                 </div>
-            </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Publishing options (same as before) -->
-    <section class="publishing-options">
-        <div class="container">
-            <h2 class="publish-title">Publish Your Journal</h2>
-            <!-- Add publishing options here -->
-        </div>
-    </section>
+<!-- Publishing options (same as before) -->
+<section class="publishing-options">
+    <div class="container">
+        <h2 class="publish-title">Publish Your Journal</h2>
+        <!-- Add a container to display published journals -->
+        <div id="publishedJournals"></div>
+    </div>
+</section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

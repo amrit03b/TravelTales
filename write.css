@@ -98,3 +98,61 @@
     color: #a44690;
     margin-bottom: 30px;
 }
+
+/* Add some padding to the publishing options section */
+.publishing-options {
+    padding: 20px 0;
+}
+
+/* Style the journal cards */
+.journal-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.journal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.journal-content {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.journal-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.journal-publish-option {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Center the form horizontally and vertically */
+.writing-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Navbar styles (same as before) */
+
+
+/* Add these styles to your existing CSS file */
+.card-img-top {
+    max-width: 100%; /* Set the maximum width of the image to 100% */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+    border-radius: 10px; /* Add border-radius to round the corners of the image */
+    object-fit: cover; /* Use object-fit to ensure the image covers the entire container */
+}
