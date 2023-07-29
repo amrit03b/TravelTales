@@ -92,31 +92,6 @@
     font-size: 16px;
     color: #555;
 }
-footer {
-    background-color: rgb(251, 112, 214);
-}
 
-.footer {
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
-}
 
-.footer ul {
-    list-style: none;
-}
 
-.footer>div {
-    width: 200px;
-}
-
-footer .footer-rights {
-    text-align: center;
-    color: rgb(9, 9, 9);
-    padding: 12px 0;
-}
-
-.footer-second ul li a {
-    text-decoration: none;
-    color: rgb(14, 14, 14);
-}
