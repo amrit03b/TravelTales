@@ -1,0 +1,100 @@
+/* Navbar styles (same as before) */
+.navbar {
+    background-color: #FFC0CB; /* Pink background color for the navbar */
+}
+
+.pink-bg {
+    background-color: #FFC0CB; /* Pink background color for the offcanvas body */
+}
+
+.pink-text {
+    color: #C71585; /* Pink color for the navbar brand text */
+}
+
+.nav-link {
+    font-size: 18px; /* Custom font size */
+    color: #9c04c3; /* Custom link color */
+    margin-right: 15px; /* Custom margin between the nav items */
+    transition: all 0.3s; /* Smooth transition for size and color changes */
+}
+
+.nav-link:hover {
+    font-size: 20px; /* Slightly bigger font size on hover */
+    color: #FF69B4; /* Lighter pink color on hover */
+}
+
+.nav-link:active {
+    font-size: 20px; /* Slightly bigger font size on click */
+    color: #C71585; /* Darker pink color on click */
+}
+
+
+/* Writing section styles */
+.writing-section {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3f1837;
+}
+
+.writing-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(244, 132, 246, 0.5);
+    margin-bottom: 40px;
+}
+
+.writing-form {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(219, 121, 216, 0.8);
+    border-radius: 10px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-control-file {
+    padding: 12px;
+}
+
+.btn-primary {
+    background-color: #FF69B4;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #FF1493;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Publishing options (same as before) */
+.publishing-options {
+    background-color: #f1f1f1;
+    padding: 50px 0;
+}
+
+.publish-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #a44690;
+    margin-bottom: 30px;
+}
