@@ -1,3 +1,4 @@
+![screenshot](https://github.com/amrit03b/TravelTales/assets/116283061/a6e97c6b-cda9-41b0-9598-5cc571176aa5)
 # TravelTales Website
 
 ![TravelTales Website](screenshot.png)
