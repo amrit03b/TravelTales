@@ -93,21 +93,6 @@
     color: #555;
 }
 
-#register01{
-    background-color: #d0166a; /* Green */
-    border: none;
-    color: white;
-    padding: 6px 9px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
 .me-3{
     font-size: medium;
     color: #0e0d0d;
