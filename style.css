@@ -32,7 +32,7 @@
 
 /* New section styles */
 .hero-section {
-    background-image: url('bg1.jpg');
+    background-image: url('images/bg1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 450px; /* Adjust height as needed */
@@ -56,7 +56,7 @@
 }
 
 .cards-section {
-    background-image: url('cards.jpg');
+    background-image: url('images/cards.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px; /* Adjust height as needed */
@@ -93,5 +93,22 @@
     color: #555;
 }
 
+#register01{
+    background-color: #d0166a; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 9px;
+    cursor: pointer;
+}
 
-
+.me-3{
+    font-size: medium;
+    color: #0e0d0d;
+}
