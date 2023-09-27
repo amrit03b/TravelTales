@@ -32,7 +32,7 @@
 
 /* New section styles */
 .hero-section {
-    background-image: url('bg1.jpg');
+    background-image: url('images/bg1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 450px; /* Adjust height as needed */
@@ -56,7 +56,7 @@
 }
 
 .cards-section {
-    background-image: url('cards.jpg');
+    background-image: url('images/cards.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px; /* Adjust height as needed */
@@ -93,5 +93,7 @@
     color: #555;
 }
 
-
-
+.me-3{
+    font-size: medium;
+    color: #0e0d0d;
+}
