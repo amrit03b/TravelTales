@@ -2,91 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write Your Travel Journal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="write.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write Your Travel Journal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="write.css">
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top pink-bg">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-            <a class="navbar-brand pink-text" href="#">TravelTales:)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="offcanvas offcanvas-end pink-bg" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #C71585;">TravelTales:)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="write.html">Start Writing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="read.html">Read Journals</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+<nav class="navbar bg-body-tertiary fixed-top pink-bg">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand pink-text" href="/">TravelTales:)</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="offcanvas offcanvas-end pink-bg" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #C71585;">TravelTales:)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="write.html">Start Writing</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="read.html">Read Journals</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
 <!-- Writing section -->
 <section class="writing-section" style="background-image: url('bg2.jpg');">
-    <div class="container">
-        <h1 class="writing-title">Write Your Travel Journal</h1>
-        <div class="writing-form">
-            <form id="journal-form"> <!-- Added the form element with the ID "journal-form" -->
-                <div class="form-group">
-                    <label for="journalTitle">Title</label>
-                    <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal..."
-                        required>
-                </div>
-                <div class="form-group">
-                    <label for="journalContent">Content</label>
-                    <textarea class="form-control" id="journalContent" rows="10"
-                        placeholder="Start writing about your experiences..." required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="journalImage">Upload Image</label>
-                    <input type="file" class="form-control-file" id="journalImage">
-                </div>
-                <button type="submit" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
-                <div class="form-check mt-3">
-                    <input type="checkbox" class="form-check-input" id="publicCheck">
-                    <label class="form-check-label" for="publicCheck">Make Public</label>
-                </div>
-            </form>
+  <div class="container">
+    <h1 class="writing-title">Write Your Travel Journal</h1>
+    <div class="writing-form">
+      <form id="journal-form"> <!-- Added the form element with the ID "journal-form" -->
+        <div class="form-group">
+          <label for="journalTitle">Title</label>
+          <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal..."
+              required>
         </div>
+        <div class="form-group">
+          <label for="journalContent">Content</label>
+          <textarea class="form-control" id="journalContent" rows="10"
+              placeholder="Start writing about your experiences..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="journalImage">Upload Image</label>
+          <input type="file" class="form-control-file" id="journalImage">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
+        <div class="form-check mt-3">
+          <input type="checkbox" class="form-check-input" id="publicCheck">
+          <label class="form-check-label" for="publicCheck">Make Public</label>
+        </div>
+      </form>
     </div>
+  </div>
 </section>
-
-
 <section class="publishing-options">
-    <div class="container">
-        <h3 class="publish-title">TravelTales published by you: </h3>
-        
-        <div id="publishedJournals"></div>
-    </div>
+  <div class="container">
+    <h3 class="publish-title">TravelTales published by you: </h3>
+    <div id="publishedJournals"></div>
+  </div>
 </section>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
-    <script src="write.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+<script src="write.js"></script>
 </body>
-
 </html>
