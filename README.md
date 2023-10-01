@@ -35,6 +35,7 @@ git clone https://github.com/amrit03b/TravelTales.git
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, please create an issue or a pull request.
+For contributing guidelines visit [CONTRIBUTING.md](https://github.com/amrit03b/TravelTales/blob/main/CONTRIBUTING.md)
 
 ## License
 
