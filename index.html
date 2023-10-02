@@ -1,72 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TravelTales</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-    crossorigin="anonymous"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <nav class="navbar bg-body-tertiary fixed-top pink-bg">
-    <div
-      class="container-fluid d-flex justify-content-between align-items-center"
-    >
-      <a class="navbar-brand pink-text" href="/">TravelTales:)</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand pink-text" href="/"> <b>TravelTales:) </b> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div
-      class="offcanvas offcanvas-end pink-bg"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
+    <div class="offcanvas offcanvas-end pink-bg" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5
-          class="offcanvas-title"
-          id="offcanvasNavbarLabel"
-          style="color: #c71585"
-        >
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #c71585">
           TravelTales:)
         </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="write.html"
-              >Start Writing</a
-            >
+            <a class="nav-link active" aria-current="page" href="write.html">Start Writing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="read.html"
-              >Read Journals</a
-            >
+            <a class="nav-link active" aria-current="page" href="read.html">Read Journals</a>
           </li>
         </ul>
       </div>
@@ -100,9 +70,7 @@
               <p class="card-text">
                 Start writing your travel experiences and make them immortal.
               </p>
-              <a href="write.html" class="btn btn-primary"
-                >Start Journaling</a
-              >
+              <a href="write.html" class="btn btn-primary">Start Journaling</a>
             </div>
           </div>
         </div>
@@ -115,9 +83,7 @@
                 Read travel diaries written by others to get to know about
                 different places.
               </p>
-              <a href="read.html" class="btn btn-primary"
-                >Read other's Journals</a
-              >
+              <a href="read.html" class="btn btn-primary">Read other's Journals</a>
             </div>
           </div>
         </div>
@@ -127,89 +93,123 @@
 
   <section class="">
     <!-- Footer -->
-    <footer class="text-center text-white" style="background-color: #f599f2">
+    <footer class="text-center text-white abc" style="background-color: #f599f2">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
         <!-- Section: CTA -->
         <section class="">
           <p class="d-flex justify-content-center align-items-center">
             <span class="me-3">Register for Free</span>
-            <button type="button" id="register01" class="btn btn-outline-dark btn-rounded" onclick="SignUp()">
-              Sign up!
-            </button>
-            <div class="form-popup" id="sign-up">
-              <form class="form-container">
-                <h1>Sign up</h1>
-
-                <label for="email"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn btn-primary">Sign Up</button>
-                <button type="button" class="btn btn-primary" onclick="SignIn()">Login</button>
-              </form>
-            </div>
-            <div class="form-popup" id="sign-in">
-              <form class="form-container">
-                <h1>Sign in</h1>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn btn-primary">Login</button>
-                <button type="button" class="btn btn-danger" onclick="closeSignIn()">Close</button>
-              </form>
-            </div>
+            <button type="button" id="registerButton" class="btn btn-outline-dark btn-rounded"
+              onclick="toggleForm('sign-up')">Sign up!</button>
+            <button type="button" id="loginButton" class="btn btn-outline-dark btn-rounded ms-3"
+              onclick="toggleForm('sign-in')">Login</button>
           </p>
-        </section>
-        <!-- Section: CTA -->
-      </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div
-        class="text-center p-3"
-        style="color: black;
-        background-color: rgba(242, 97, 205, 0.2)"
-      >
-        © 2023 Copyright:
-        <a class="text-black" href="#">TravelTales:)</a>
+        </section>
       </div>
-      <!-- Copyright -->
     </footer>
-    <!-- Footer -->
+  </section>
+
+  <!-- Sign Up Form -->
+  <div class="form-popup" id="sign-up">
+    <form class="form-container bg-light p-4 rounded">
+      <h1 class="mb-4">Sign up</h1>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="psw" class="form-label">Password</label>
+        <input type="password" class="form-control" id="psw" placeholder="Enter Password" required>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary me-3">Sign Up</button>
+        <button type="button" class="btn btn-danger" onclick="closeForm('sign-up')">Close</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Login Form -->
+  <div class="form-popup" id="sign-in">
+    <form class="form-container bg-light p-4 rounded">
+      <h1 class="mb-4">Sign in</h1>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="psw" class="form-label">Password</label>
+        <input type="password" class="form-control" id="psw" placeholder="Enter Password" required>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-primary me-3">Login</button>
+        <button type="button" class="btn btn-danger" onclick="closeForm('sign-in')">Close</button>
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- Section: CTA -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="color: black;
+        background-color: rgba(242, 97, 205, 0.2)">
+    © 2023 Copyright:
+    <a class="text-black" href="#">TravelTales:)</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
   </section>
   <!-- End of .container -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <script>
-  function SignUp() {
-    document.getElementById("sign-up").style.display = "block";
-  }
+    function SignUp() {
+      document.getElementById("sign-up").style.display = "block";
+    }
 
-  function closeSignUp() {
-    document.getElementById("sign-up").style.display = "none";
-  }
+    function closeSignUp() {
+      document.getElementById("sign-up").style.display = "none";
+    }
 
-  function SignIn() {
-    closeSignUp();
-    document.getElementById("sign-in").style.display = "block";
-  }
+    function SignIn() {
+      closeSignUp();
+      document.getElementById("sign-in").style.display = "block";
+    }
 
-  function closeSignIn() {
-    document.getElementById("sign-in").style.display = "none";
-  }
+    function closeSignIn() {
+      document.getElementById("sign-in").style.display = "none";
+    }
+    function toggleForm(formId) {
+      var form = document.getElementById(formId);
+      if (form.style.display === "block") {
+        form.style.display = "none";
+      } else {
+        form.style.display = "block";
+      }
+    }
+
+    function closeForm(formId) {
+      document.getElementById(formId).style.display = "none";
+    }
   </script>
 </body>
+
 </html>
