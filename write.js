@@ -23,6 +23,17 @@ function createJournal(event) {
     const publishedJournals = document.getElementById('publishedJournals');
     publishedJournals.appendChild(card);
 
+    // console.log(publishedJournals);
+
+    const journalData = {
+        title: journalTitle,
+        content: journalContent,
+        image: journalImage ? URL.createObjectURL(journalImage) : null,
+        isPublic: publicCheck
+    };
+    // console.log(journalData);
+    localStorage.setItem('journalData', JSON.stringify(journalData));
+
     // Reset the form fields
     journalForm.reset();
 }
