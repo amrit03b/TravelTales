@@ -1,6 +1,7 @@
 /* Navbar styles (same as before) */
+
 .navbar {
-    background-color: #FFC0CB; /* Pink background color for the navbar */
+    background-color: #C71585; /* Pink background color for the navbar */
 }
 
 .pink-bg {
@@ -34,12 +35,14 @@
     padding: 50px 0;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #3f1837;
     margin-top: 10px;
+    width: 100%;
+    
 }
 
 .writing-title {
@@ -53,7 +56,7 @@
 .writing-form {
     max-width: 600px;
     padding: 20px;
-    background-color: rgba(219, 121, 216, 0.8);
+    background-color: #db79d8cc;
     border-radius: 10px;
 }
 
@@ -90,6 +93,9 @@
 .publishing-options {
     background-color: #f1f1f1;
     padding: 50px 0;
+    width: 55%;
+    margin-top: 46px;
+    max-height: 100vh;
 }
 
 .publish-title {
@@ -103,6 +109,7 @@
 /* Add some padding to the publishing options section */
 .publishing-options {
     padding: 20px 0;
+
 }
 
 /* Style the journal cards */
@@ -156,4 +163,8 @@
     height: auto; /* Automatically adjust the height to maintain the aspect ratio */
     border-radius: 10px; /* Add border-radius to round the corners of the image */
     object-fit: cover; /* Use object-fit to ensure the image covers the entire container */
+}
+
+.main-content{
+    display: flex;
 }
