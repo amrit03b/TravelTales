@@ -62,12 +62,19 @@
     min-height: 500px; /* Adjust height as needed */
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: center;
+}
+
+.cards-section .row
+{
+    display: flex;
+    gap: 20px;
 }
 
 .card {
-    width: 300px; /* Adjust the card width as needed */
-    margin: 20px 5%; /* Add more space between the cards horizontally and vertically */
+    min-width: 300px; /* Adjust the card width as needed */
+    width:400px;
+    /* margin: 20px 5%; Add more space between the cards horizontally and vertically */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
