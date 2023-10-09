@@ -82,6 +82,24 @@
     flex-direction: column;
 }
 
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 .card-img-top {
     height: 200px; /* Adjust the image height as needed */
     object-fit: cover;
@@ -149,6 +167,6 @@
 .pink-text{
     margin-left: 46%;
 }
-.footerr {
+.footerr p{
     margin-left: 5px;
-  }
+}
