@@ -33,138 +33,91 @@
 /* Writing section styles */
 .writing-section {
     padding: 50px 0;
+    background-image: url('other images/writebg.jpg');
     background-size: cover;
     background-position: center;
-    max-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #3f1837;
-    margin-top: 10px;
-    width: 100%;
-    
+    width: 60%; 
+    height: 120vh;
 }
 
 .writing-title {
     text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(244, 132, 246, 0.5);
-    margin-bottom: 40px;
+    text-shadow: 0px 0px 5px #C71585;
 }
 
 .writing-form {
     max-width: 600px;
-    padding: 20px;
-    background-color: #db79d8cc;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
     border-radius: 10px;
 }
 
 .form-group label {
-    font-size: 18px;
-    font-weight: bold;
+    color: #C71585;
 }
 
-.form-control {
-    font-size: 16px;
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.form-control-file {
-    padding: 12px;
+.form-control:focus {
+    border-color: #C71585;
+    box-shadow: 0 0 5px #C24594;
 }
 
 .btn-primary {
-    background-color: #FF69B4;
+    background-color: #C71585;
     border: none;
 }
 
-.btn-primary:hover {
-    background-color: #FF1493;
+.btn-primary:hover, .btn-primary:active {
+    background-color: #B7147B !important;
 }
 
 .form-check-input {
     margin-right: 10px;
 }
 
+.form-check-input:checked {
+    background-color: #C71585;
+    border-color: #C71585;
+}
+
+.form-check-input:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px #C24594 !important;
+}
+
 /* Publishing options (same as before) */
 .publishing-options {
     background-color: #f1f1f1;
-    padding: 50px 0;
-    width: 55%;
-    margin-top: 46px;
-    max-height: 100vh;
+    width: 40%;
+    max-height: 120vh;
+    padding: 70px 0;
+    overflow-y: scroll;
 }
 
 .publish-title {
     text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: #a44690;
-    margin-bottom: 30px;
-}
-
-/* Add some padding to the publishing options section */
-.publishing-options {
-    padding: 20px 0;
-
+    color: #C71585;
 }
 
 /* Style the journal cards */
 .journal-card {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    max-width: 24rem;
+    margin: auto;
 }
-
-.journal-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.journal-content {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.journal-image {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-.journal-publish-option {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Center the form horizontally and vertically */
-.writing-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    /* background-color: #fff; */
-    border-radius: 10px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
-
-/* Navbar styles (same as before) */
-
 
 /* Add these styles to your existing CSS file */
 .card-img-top {
     max-width: 100%; /* Set the maximum width of the image to 100% */
     height: auto; /* Automatically adjust the height to maintain the aspect ratio */
-    border-radius: 10px; /* Add border-radius to round the corners of the image */
     object-fit: cover; /* Use object-fit to ensure the image covers the entire container */
 }
 
-.main-content{
-    display: flex;
+@media screen and (max-width: 800px) {
+    .writing-section {
+        width: 100%;
+    }
+    .publishing-options {
+        width: 100%;
+        padding: 40px 0;
+    }
 }
