@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar bg-body-tertiary fixed-top pink-bg">
   <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a class="navbar-brand pink-text" href="/">TravelTales:)</a>
+      <a class="navbar-brand pink-text" href="index.html"><b>TravelTales:)</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -42,39 +42,39 @@
 </nav>
 
 <!-- Writing section -->
-<main class="main-content">
-<section class="writing-section" style="background-image: url('bg2.jpg');">
-  <div class="container">
-    <h1 class="writing-title">Write Your Travel Journal</h1>
+<main class="main-content d-flex flex-wrap">
+<section class="writing-section">
+  <div class="container p-4">
+    <h2 class="writing-title mb-5">Write Your Travel Journal</h2>
     <div class="writing-form">
       <form id="journal-form"> <!-- Added the form element with the ID "journal-form" -->
-        <div class="form-group">
+        <div class="form-group mb-3">
           <label for="journalTitle">Title</label>
-          <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal..."
+          <input type="text" class="form-control" id="journalTitle" placeholder="Write a title for your journal"
               required>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-3">
           <label for="journalContent">Content</label>
-          <textarea class="form-control" id="journalContent" rows="10"
-              placeholder="Start writing about your experiences..." required></textarea>
+          <textarea class="form-control" id="journalContent" rows="6"
+              placeholder="Start writing about your experiences" required></textarea>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-3">
           <label for="journalImage">Upload Image</label>
-          <input type="file" class="form-control-file" id="journalImage">
+          <input type="file" class="form-control" id="journalImage">
         </div>
-        <button type="submit" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
-        <div class="form-check mt-3">
+        <div class="form-check mb-3">
           <input type="checkbox" class="form-check-input" id="publicCheck">
           <label class="form-check-label" for="publicCheck">Make Public</label>
         </div>
+        <button type="submit" class="btn btn-primary btn-block" id="publishBtn">Publish</button>
       </form>
     </div>
   </div>
 </section>
 <section class="publishing-options">
   <div class="container">
-    <h3 class="publish-title">TravelTales published by you: </h3>
-    <div id="publishedJournals"></div>
+    <h3 class="publish-title p-3">Your TravelTales</h3>
+    <div id="publishedJournals" class="mx-5"></div>
   </div>
 </section>
 </main>

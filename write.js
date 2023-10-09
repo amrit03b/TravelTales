@@ -9,13 +9,14 @@ function createJournal(event) {
 
     // Create a new card to display the journal details
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('card', 'journal-card', 'mb-4');
     card.innerHTML = `
-        <img src="${journalImage ? URL.createObjectURL(journalImage) : 'placeholder.jpg'}" class="card-img-top" alt="Journal Image">
+        <img src="${journalImage ? URL.createObjectURL(journalImage) : 'images/cards.jpg'}" class="card-img-top" alt="Journal Image">
         <div class="card-body">
             <h5 class="card-title">${journalTitle}</h5>
             <p class="card-text">${journalContent}</p>
-            <p class="card-text">${publicCheck ? 'Public' : 'Private'}</p>
+            <hr />
+            <p class="card-text text-end">${publicCheck ? 'Public' : 'Private'}</p>
         </div>
     `;
 
