@@ -13,7 +13,7 @@
 
 .nav-link {
     font-size: 18px; /* Custom font size */
-    color: #333; /* Custom link color */
+    color: rgb(255, 255, 255); /* Custom link color */
     margin-right: 15px; /* Custom margin between the nav items */
     transition: all 0.3s; /* Smooth transition for size and color changes */
 }
@@ -47,7 +47,7 @@
 .hero-title {
     font-size: 40px;
     font-weight: bold;
-    color: #0e0d0d; /* Dark pink color for the hero title */
+    color: #404040; /* Dark pink color for the hero title */
 }
 
 .hero-subtitle {
@@ -159,9 +159,14 @@
 .abc{
     height: 85px;
 }
+
+.btn{
+    transition: 1s;
+}
+
 .btnn{
     color: white;
-    background-color:rgb(18, 238, 231);
+    background-color:darkslateblue
 }
 
 .pink-text{
