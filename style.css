@@ -1,4 +1,17 @@
 /* Navbar styles */
+
+
+html *
+{
+   font-size: 1.05em !important;
+   color: #000 !important;
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.titled{
+    font-size: xx-large;
+}
+
 .navbar {
     background-color: #FFC0CB; /* Pink background color for the navbar */
 }
