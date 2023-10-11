@@ -9,11 +9,12 @@
 }
 
 .pink-text {
+
     color: #C71585; /* Pink color for the navbar brand text */
 }
 
 .nav-link {
-    font-size: 18px; /* Custom font size */
+    font-size: 208px; /* Custom font size */
     color: #9c04c3; /* Custom link color */
     margin-right: 15px; /* Custom margin between the nav items */
     transition: all 0.3s; /* Smooth transition for size and color changes */
