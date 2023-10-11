@@ -14,8 +14,8 @@
 }
 
 .nav-link {
-    font-size: 208px; /* Custom font size */
-    color: #9c04c3; /* Custom link color */
+    font-size: 18px; /* Custom font size */
+    color: rgb(255, 255, 255); /* Custom link color */
     margin-right: 15px; /* Custom margin between the nav items */
     transition: all 0.3s; /* Smooth transition for size and color changes */
 }
