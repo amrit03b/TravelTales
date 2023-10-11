@@ -1,0 +1,81 @@
+#login_password{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    border: 0ch;
+}
+
+#login_email{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    border: 0ch;
+}
+
+#login{
+    margin: auto;
+    display: flex; 
+    border: 0ch;   
+    border-radius: 20px;
+    background-color:#eb92db;
+    color:#a90580;
+    transition: 900ms;
+}
+
+#login:hover{
+    background-color:#a60c97;
+    color:#e582e9;
+}
+
+/* #login:hover{
+    background-color: #ba3b0a;
+    color: #ffa458; */
+
+.form-group{
+    color: #a60c97;
+}
+
+.col-sm-4{
+    color: #a60c97;
+}
+
+#make{
+    color: #a60c97;
+}
+
+#password{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    border: 0ch;
+}
+
+#email{
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
+    border: 0ch;
+}
+
+#register{
+    margin: auto;
+    display: flex;  
+    border: 0ch;  
+    border-radius: 20px;
+    background-color:#ff58b1;
+    color:#ba0a8e;
+    transition: 900ms;
+}
+
+#register:hover{
+    background-color:#ba0a97;
+    color:#ff00b7;
+}
+
+.col-sm-4{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+#make{
+    position: relative;
+    left: 45%;
+}
