@@ -45,3 +45,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 For any inquiries or feedback, please contact through linkedin or twitter provided in my GitHub profile page.
 
+# <p align="center">Contributors
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=amrit03b/TravelTales) 
