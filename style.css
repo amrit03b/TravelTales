@@ -3,12 +3,10 @@
 
 html *
 {
-   font-size: 1.05em !important;
-   color: #000 !important;
    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
-.titled{
+#titled{
     font-size: xx-large;
 }
 
@@ -42,6 +40,29 @@ html *
 }
 
 /* Navbar styles (same as before) */
+
+#registerButton{
+    color: #00bfff;
+    transition: 1s;
+}
+
+#registerButton:hover{
+    border-radius: 20px;
+    scale: 1.08;
+    color: #ffffff;
+}
+
+.btn.btn-primary{
+    color: #0e0d0d;
+    transition:all 2s;
+}
+
+.btn.btn-primary:hover{
+    border-radius: 20px;
+    scale: 1.08;
+    color: #f1f1f1;
+    background-color: #5500ff;
+}
 
 /* New section styles */
 .hero-section {
@@ -164,9 +185,8 @@ html *
     background-color: #ddd;
     outline: none;
 }
-
 .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
+    opacity: 0;
 }
 
 .abc{
@@ -174,12 +194,18 @@ html *
 }
 
 .btn{
-    transition: 1s;
+    transition: 50ms;
 }
 
 .btnn{
     color: white;
-    background-color:darkslateblue
+    background-color:darkslateblue;
+    transition: 50ms;
+}
+
+.btnn:hover{
+    color: white;
+    background-color:rgb(0, 0, 0);
 }
 
 .pink-text{
