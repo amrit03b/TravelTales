@@ -52,6 +52,19 @@ html *
     color: #ffffff;
 }
 
+#cdtt{
+    color: #ffffff;
+}
+
+#cdt{
+    color: #fbd3ff;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.142);
+    backdrop-filter: blur(5px);
+}
+
 .btn.btn-primary{
     color: #0e0d0d;
     transition:all 2s;
