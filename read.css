@@ -1,3 +1,7 @@
+/* body */
+body{
+  background-color: #ffcdfd;
+}
 /* Style for the journal card */
 .card {
     border: 1px solid #ccc;
@@ -26,4 +30,37 @@
     color: #666;
     margin-top: 10px;
   }
-  
+
+  .search-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.search-container:hover #search-input{
+  width:350px;
+}
+
+.search-container #search-input{
+  width: 0;
+  outline:none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+button{
+  border-radius: 20px;
+}
+
+
+.fa{
+  color: rgb(178, 49, 243);
+}
+
