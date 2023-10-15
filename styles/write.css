@@ -34,7 +34,7 @@
 /* Writing section styles */
 .writing-section {
     padding: 50px 0;
-    background-image: url('../assets/images/writebg.jpg');
+    background-image: url('/assets/images/writebg.jpg');
     background-size: cover;
     background-position: center;
     width: 60%; 
