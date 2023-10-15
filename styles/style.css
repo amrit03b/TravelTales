@@ -8,8 +8,28 @@ html *
 
 #titled{
     font-size: xx-large;
-}
+    position: relative;
+    text-decoration: none;
+    transition: 0.6s;
 
+}
+/* Added Animation to the title */
+#titled::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:#f8f9fa;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+/* Added Animation to the title */
+a #titled:hover{
+ color: black;
+ opacity: 0.8;
+}
 .navbar {
     background-color: #FFC0CB; /* Pink background color for the navbar */
 }
@@ -38,6 +58,7 @@ html *
     font-size: 20px; /* Slightly bigger font size on click */
     color: #C71585; /* Darker pink color on click */
 }
+
 
 /* Navbar styles (same as before) */
 
@@ -135,6 +156,13 @@ html *
     animation: gradient-animation 18s ease infinite;
   }
   
+  /* KEYFRAMES ANIMATION */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
