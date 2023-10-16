@@ -100,7 +100,7 @@ a #titled:hover{
 
 /* New section styles */
 .hero-section {
-    background-image: url('/assets/images/bg1.jpg');
+    background-image: url('../images/bg1.jpg');
     background-size: cover;
     background-position: center;
     min-height: 450px; /* Adjust height as needed */
@@ -124,7 +124,7 @@ a #titled:hover{
 }
 
 .cards-section {
-    background-image: url('/assets/images/cards.jpg');
+    background-image: url('../images/cards.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px; /* Adjust height as needed */

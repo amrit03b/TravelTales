@@ -11,7 +11,7 @@ function createJournal(event) {
     const card = document.createElement('div');
     card.classList.add('card', 'journal-card', 'mb-4');
     card.innerHTML = `
-        <img src="${journalImage ? URL.createObjectURL(journalImage) : '../assets/images/cards.jpg'}" class="card-img-top" alt="Journal Image">
+        <img src="${journalImage ? URL.createObjectURL(journalImage) : '../images/cards.jpg'}" class="card-img-top" alt="Journal Image">
         <div class="card-body">
             <h5 class="card-title">${journalTitle}</h5>
             <p class="card-text">${journalContent}</p>
