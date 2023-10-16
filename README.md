@@ -24,6 +24,12 @@ git clone https://github.com/amrit03b/TravelTales.git
 
 2. Open `index.html` in your web browser to access the home page.
 
+3. Install Docker Desktop
+
+4. Run the command docker run -it -p 8000:8000 traveltales
+
+5. After this start localhost:8000 in browser , Apllication run 
+
 ## Usage
 
 1. Visit the website [TravelTales](https://amrit03b.github.io/TravelTales/) to explore travel journals written by other users.
