@@ -85,3 +85,35 @@ button{
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+
+
+.navbar {
+  background-color: #C71585; /* Pink background color for the navbar */
+}
+
+.pink-bg {
+  background-color: #FFC0CB; /* Pink background color for the offcanvas body */
+}
+
+.pink-text {
+
+  color: #C71585; /* Pink color for the navbar brand text */
+}
+
+.nav-link {
+  font-size: 18px; /* Custom font size */
+  color: rgb(255, 255, 255); /* Custom link color */
+  margin-right: 15px; /* Custom margin between the nav items */
+  transition: all 0.3s; /* Smooth transition for size and color changes */
+}
+
+.nav-link:hover {
+  font-size: 20px; /* Slightly bigger font size on hover */
+  color: #FF69B4; /* Lighter pink color on hover */
+}
+
+.nav-link:active {
+  font-size: 20px; /* Slightly bigger font size on click */
+  color: #C71585; /* Darker pink color on click */
+}
