@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     card.classList.add('card');
 
     const cardContent = `
-      <img src="${journalData.image ? journalData.image : 'placeholder.jpg'}" alt="Journal Image">
+      <img src="${journalData.image ? journalData.image : '../images/cards.jpg'}" alt="Journal Image">
       <div class="card-body">
         <h1>${journalData.title}</h1>
         <p>${journalData.content}</p>
