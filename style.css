@@ -277,3 +277,13 @@ a #titled:hover{
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+
+  .button{
+    margin:auto;
+    padding-left: 18%;
+  }
+
+  .button1{
+    margin:auto;
+    padding-left: 25%;
+  }
