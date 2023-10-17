@@ -76,6 +76,9 @@ a #titled:hover{
 
 #cdtt{
     color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cdt{
