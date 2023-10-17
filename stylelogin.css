@@ -15,14 +15,15 @@
     display: flex; 
     border: 0ch;   
     border-radius: 20px;
-    background-color:#eb92db;
-    color:#a90580;
-    transition: 900ms;
+    /* background-color:#eb92db; */
+    background-color:#ff58b1;
+    color:whitesmoke;
+    transition: 0.3s;
 }
 
 #login:hover{
     background-color:#a60c97;
-    color:#e582e9;
+    /* color:#e582e9; */
 }
 
 /* #login:hover{
@@ -59,13 +60,13 @@
     border: 0ch;  
     border-radius: 20px;
     background-color:#ff58b1;
-    color:#ba0a8e;
-    transition: 900ms;
+    color:whitesmoke;
+    transition: 0.3s;
 }
 
 #register:hover{
     background-color:#ba0a97;
-    color:#ff00b7;
+    /* color:#ff00b7; */
 }
 
 .col-sm-4{
