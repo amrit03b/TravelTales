@@ -34,7 +34,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="write.html">Start Writing</a>
+            <a class="nav-link active checkAuth" aria-current="page" href="#">Start Writing</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="read.html">Read Journals</a>
@@ -70,7 +70,7 @@
                 Start writing your travel experiences and make them immortal.
               </p>
               <div class="button1">
-              <a href="write.html" class="btn btn-primary">Start Journaling</a>
+              <a href="#" class="btn btn-primary checkAuth">Start Journaling</a>
             </div>
           </div>
         </div>
@@ -166,18 +166,27 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-<section id="title" class="gradient-background">
+  <section id="title" class="gradient-background">
 
-  <div class="text-center p-3 footerr" style="color: white;
-        background-color: rgba(242, 97, 205, 0.2)">
-    <p>© 2023 Copyright:</p>
-    <a class="text-black" href="index.html">TravelTales:)</a>
+    <div class="text-center p-3 footerr" style="color: white;
+          background-color: rgba(242, 97, 205, 0.2)">
+      <p>© 2023 Copyright:</p>
+      <a class="text-black" href="index.html">TravelTales:)</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <div class="modal-wrap">
+    <div class="info-wrap">
+      <h3 class="info-text">To write a post you must do authorization.</h3> 
+      <div class="btn-group">
+        <button class="btnA btn-signIn">Sign in</button>
+        <button class="btnA btn-signUp">Sign up</button>
+        <button class="btnA btn-cancel">Cancel</button>
+      </div>
+    </div>
   </div>
-  <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-</section>
-  
   <!-- End of .container -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -211,6 +220,40 @@
     function closeForm(formId) {
       document.getElementById(formId).style.display = "none";
     }
+  </script>
+  <script>
+    const bodyWrap = document.querySelector('body');
+    const btnSignUp = document.querySelector('.btn-signUp');
+    const btnSignIn = document.querySelector('.btn-signIn');
+    const btnCancel = document.querySelector('.btn-cancel');
+    const signUpWrap = document.querySelector('#sign-up');
+    const signInWrap = document.querySelector('#sign-in');
+    const modalWrap = document.querySelector('.modal-wrap');
+    const btnCloseMenu = document.querySelector('.btn-close');
+    
+    const toggleModalWrap = () => modalWrap.classList.toggle('modal-wrap_active');
+    const showSignInWrap = () => signInWrap.style.display = "block";
+    const showSignUpWrap = () => signUpWrap.style.display = "block";
+    const hideMenuWrap = () => btnCloseMenu.click();
+
+    btnSignIn.addEventListener('click', () => {
+      toggleModalWrap();
+      showSignInWrap();
+    });
+
+    btnSignUp.addEventListener('click', () => {
+      toggleModalWrap();
+      showSignUpWrap();
+    });
+
+    btnCancel.addEventListener('click', toggleModalWrap);
+
+    bodyWrap.addEventListener('click', ({ target }) => {
+      if(target.classList.contains('checkAuth')) {
+        hideMenuWrap();
+        toggleModalWrap();
+      }
+    })
   </script>
 </body>
 
