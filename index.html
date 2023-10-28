@@ -34,10 +34,10 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active checkAuth" aria-current="page" href="#">Start Writing</a>
+            <a class="nav-link active checkAuth" aria-current="page" data-href="write.html">Start Writing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="read.html">Read Journals</a>
+            <a class="nav-link active checkAuth" aria-current="page" data-href="read.html">Read Journals</a>
           </li>
         </ul>
       </div>
@@ -70,7 +70,7 @@
                 Start writing your travel experiences and make them immortal.
               </p>
               <div class="button1">
-              <a href="#" class="btn btn-primary checkAuth">Start Journaling</a>
+              <a data-href="write.html" class="btn btn-primary checkAuth">Start Journaling</a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
                 different places.
               </p>
               <div class="button">
-              <a href="read.html" class="btn btn-primary">Read other's Journals</a>
+              <a data-href="read.html" class="btn btn-primary checkAuth">Read other's Journals</a>
             </div>
           </div>
         </div>
@@ -179,10 +179,9 @@
   </section>
   <div class="modal-wrap">
     <div class="info-wrap">
-      <h3 class="info-text">To write a post you must do authorization.</h3> 
+      <h3 class="info-text">To write or read a post you must do authorization.</h3> 
       <div class="btn-group">
-        <button class="btnA btn-signIn">Sign in</button>
-        <button class="btnA btn-signUp">Sign up</button>
+        <button class="btnA btn-sign">Sign in/up</button>
         <button class="btnA btn-cancel">Cancel</button>
       </div>
     </div>
@@ -223,27 +222,17 @@
   </script>
   <script>
     const bodyWrap = document.querySelector('body');
-    const btnSignUp = document.querySelector('.btn-signUp');
-    const btnSignIn = document.querySelector('.btn-signIn');
+    const btnSign = document.querySelector('.btn-sign');
     const btnCancel = document.querySelector('.btn-cancel');
-    const signUpWrap = document.querySelector('#sign-up');
-    const signInWrap = document.querySelector('#sign-in');
     const modalWrap = document.querySelector('.modal-wrap');
     const btnCloseMenu = document.querySelector('.btn-close');
     
     const toggleModalWrap = () => modalWrap.classList.toggle('modal-wrap_active');
-    const showSignInWrap = () => signInWrap.style.display = "block";
-    const showSignUpWrap = () => signUpWrap.style.display = "block";
     const hideMenuWrap = () => btnCloseMenu.click();
 
-    btnSignIn.addEventListener('click', () => {
+    btnSign.addEventListener('click', () => {
       toggleModalWrap();
-      showSignInWrap();
-    });
-
-    btnSignUp.addEventListener('click', () => {
-      toggleModalWrap();
-      showSignUpWrap();
+      window.open('login.html', '_self');
     });
 
     btnCancel.addEventListener('click', toggleModalWrap);
@@ -252,6 +241,7 @@
       if(target.classList.contains('checkAuth')) {
         hideMenuWrap();
         toggleModalWrap();
+        window.scrollTo(0, 0);
       }
     })
   </script>
