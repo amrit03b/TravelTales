@@ -148,9 +148,8 @@ a #titled:hover{
     justify-content: center;
 }
 
-.card {
-    min-width: 300px; /* Adjust the card width as needed */
-    width:400px;
+.card { /* Adjust the card width as needed */
+    width:25rem;
     /* margin: 20px 5%; Add more space between the cards horizontally and vertically */
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -296,7 +295,6 @@ a #titled:hover{
     padding-left: 25%;
   }
 
-
     .modal-wrap {
         display: none;
         position: absolute;
@@ -347,3 +345,28 @@ a #titled:hover{
         background-color: #c71585;
         color: #fff;
     }
+
+@media only screen and (max-width:825px) and (min-width:480px) {
+    .row{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width:480px)  {
+    .row{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card{
+        width: 18rem;
+    }
+    .button1{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
