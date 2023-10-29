@@ -87,6 +87,7 @@
                     <p>© 2023 Copyright:</p>
                     <a class="text-black d-block" href="index.html">TravelTales:)</a>
                     <a class="btn btn-rounded" href="aboutus.html">About us</a>
+                    <a class="btn btn-rounded" id="privacyPolicyLink">Privacy Policy</a>
                 </div>
                 <!-- Copyright -->
             </footer>
@@ -101,6 +102,96 @@
                 </div>
             </div>
         </div>
+        <div class="modal" id="privacyPolicyModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-info">
+                        <h5 class="modal-title">Privacy Policy</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-light">
+                        <p class="fw-bold">
+                            Effective Date: 10/29/2023
+                        </p>
+                        <p>
+                            At TravelTales, we are committed to protecting your privacy and ensuring the security of your personal information. This
+                            Privacy Policy outlines our practices regarding the collection, use, and sharing of your information when you visit our
+                            website. Please take a moment to review this policy and understand how we handle your data.
+                            <br>
+                            Information We Collect
+                            <br>
+                            1.1. Personal Information
+                            We may collect the following personal information when you register or use our services:
+                            <br>
+                            Name
+                            Email address
+                            Username and password
+                            Profile picture
+                            Location
+                            User-generated content (e.g., travel diaries, comments)
+                            1.2. Usage Information
+                            We automatically collect certain information about how you interact with our website, including:
+                            <br>
+                            Device information (e.g., IP address, browser type, operating system)
+                            Usage statistics (e.g., pages visited, features used)
+                            Cookies and similar tracking technologies (see our Cookie Policy for more information)
+                            <br>
+                            How We Use Your Information
+                            <br>
+                            We use your information for the following purposes:
+                            <br>
+                            To create and manage your TravelTales account.
+                            To personalize your experience on our website.
+                            To provide and improve our services.
+                            To respond to your requests and inquiries.
+                            To send you relevant updates and notifications.
+                            To monitor and analyze website usage.
+                            To prevent fraud and enhance the security of our platform.
+                            Sharing Your Information
+                            We do not sell your personal information to third parties. However, we may share your information with the following
+                            entities:
+                            <br>
+                            Service providers: We may engage third-party service providers to assist us in providing our services (e.g., hosting,
+                            analytics, customer support).
+                            Legal requirements: We may disclose your information in response to a legal request or as required by applicable laws
+                            and regulations.
+                            Cookies and Tracking Technologies
+                            We use cookies and similar tracking technologies to enhance your user experience and analyze website traffic. You can
+                            manage your cookie preferences through your browser settings. Please refer to our Cookie Policy for more details.
+                            <br>
+                            Your Privacy Choices
+                            <br>
+                            You can control and manage your privacy preferences by:
+                            
+                            Editing your profile information.
+                            Updating your communication preferences.
+                            Deleting your account, subject to our account deletion policy.
+                            Data Security
+                            We take the security of your personal information seriously. We implement reasonable security measures to protect your
+                            data from unauthorized access and disclosure.
+                            <br>
+                            Children's Privacy
+                            TravelTales is not intended for users under the age of 13. We do not knowingly collect personal information from
+                            individuals under the age of 13.
+                            <br>
+                            Changes to this Privacy Policy
+                            We may update this Privacy Policy to reflect changes in our practices or for other operational, legal, or regulatory
+                            reasons. Any changes will be posted on this page, and the effective date will be updated accordingly.
+                            <br>
+                            Contact Us
+                            If you have any questions or concerns about this Privacy Policy or our data practices, please contact us 
+                            By using TravelTales, you acknowledge and agree to the terms of this Privacy Policy. Please review this policy
+                            periodically for any updates or changes.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Accept</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -159,5 +250,24 @@
             window.scrollTo(0, 0);
         }
     })
+</script>
+<script>
+    const privacyPolicyModal = new bootstrap.Modal(document.getElementById('privacyPolicyModal'));
+
+    document.getElementById('privacyPolicyLink').addEventListener('click', () => {
+        privacyPolicyModal.show();
+    });
+
+    const acceptButton = document.querySelector('#privacyPolicyModal .btn-primary');
+    const closeButton = document.querySelector('#privacyPolicyModal .btn-secondary');
+
+    acceptButton.addEventListener('click', () => {
+        // Handle the "Accept" button action here (e.g., setting a cookie).
+        privacyPolicyModal.hide(); // Close the modal
+    });
+
+    closeButton.addEventListener('click', () => {
+        privacyPolicyModal.hide(); // Close the modal
+    });
 </script>
 </html>
