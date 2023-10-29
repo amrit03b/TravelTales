@@ -113,7 +113,7 @@
     object-fit: cover; /* Use object-fit to ensure the image covers the entire container */
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .writing-section {
         width: 100%;
     }
@@ -121,7 +121,7 @@
         width: 100%;
         padding: 40px 0;
     }
-} */
+}
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
