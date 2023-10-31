@@ -29,14 +29,15 @@
     font-size: 20px; /* Slightly bigger font size on click */
     color: #C71585; /* Darker pink color on click */
 }
-
+.main-content{
+    background-image: url('images/writebg.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 /* Writing section styles */
 .writing-section {
     padding: 50px 0;
-    background-image: url('images/writebg.jpg');
-    background-size: cover;
-    background-position: center;
     width: 60%; 
     height: 120vh;
 }
@@ -88,9 +89,8 @@
 
 /* Publishing options (same as before) */
 .publishing-options {
-    background-color: #f1f1f1;
     width: 40%;
-    max-height: 120vh;
+    height: 120vh;
     padding: 70px 0;
     overflow-y: scroll;
 }
@@ -116,6 +116,8 @@
 @media screen and (max-width: 800px) {
     .writing-section {
         width: 100%;
+        border-bottom: 5px solid white;
+
     }
     .publishing-options {
         width: 100%;

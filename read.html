@@ -9,7 +9,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="read.css">
 </head>
-<body>
+<body onload="CheckValidity()">
+  <script>
+    function CheckValidity() {
+      if ((localStorage.getItem("storageName"))==0) {
+        // alert("Sign In through proper means instead of changing URL.");
+        let address=window.location.href;
+        window.location.href = address.replace('read','index');
+}
+    }
+  </script>
   <nav class="navbar bg-body-tertiary fixed-top pink-bg">
     <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand pink-text" href="index.html"><b>TravelTales:)</b></a>
