@@ -157,6 +157,8 @@ hieght="350"
 		    const user = userCredential.user;
 		    console.log(user);
 			window.location.assign("write.html");
+			var validity = 1;
+        	localStorage.setItem("storageName", validity);
 		    alert(user.email+" Login successfully!!!");
 		    document.getElementById('logout').style.display = 'block';
 		    // ...

@@ -11,7 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
 </head>
 
-<body>
+<body onload="CheckValidity()">
+  <script>
+    function CheckValidity() {
+      if ((localStorage.getItem("storageName"))==0) {
+        // alert("Sign In through proper means instead of changing URL.");
+        let address=window.location.href;
+        window.location.href = address.replace('write','index');
+}
+    }
+  </script>
 <nav class="navbar bg-body-tertiary fixed-top pink-bg">
   <div class="container-fluid d-flex justify-content-between align-items-center">
       <a class="navbar-brand pink-text" href="index.html"><b>TravelTales:)</b></a>
