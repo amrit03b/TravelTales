@@ -11,6 +11,7 @@
 .pink-text {
 
     color: #C71585; /* Pink color for the navbar brand text */
+    margin: auto;
 }
 
 .nav-link {
